@@ -122,9 +122,10 @@ body {
   height: 10px;
   margin: 0 5px;
   overflow: hidden;
-  background: #ddd;
+  background: transparent;
   border-radius: 50%;
   transition: 0.3s;
+  border: solid 1px black;
 }
 
 .slide_pagination .dot.dot_active {
@@ -137,22 +138,10 @@ body {
   height: 100%;
 }
 
-.prevButton,
-.nextButton {
-  position: ;
-  width: 40px;
-  height: 40px;
-  margin: 0px;
-  font-size: 10px;
-
-  -webkit-appearance: none;
-  -moz-appearance: none;
-  appearance: none;
-}
-
-button {
-  border: 10;
+button, button:hover, button:active, button:focus {
+  border: solid 1px black;
   outline: 0;
+  background-color:transparent;
 
   width: 50px;
   height: 50px;
@@ -167,8 +156,16 @@ button {
   appearance: none;
 }
 
-button:hover {
-  background: black;
+.prevButton,
+.nextButton {
+  width: 40px;
+  height: 40px;
+  margin: 0px;
+  font-size: 10px;
+
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
 }
 
 .music {
