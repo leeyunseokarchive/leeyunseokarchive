@@ -22,7 +22,7 @@
   <div class="swiper mySwiper swiper-h">
     <div class="swiper-wrapper">
       <div class="swiper-slide">
-        <img src="images/leeyunseokarchiveLogo(투명).png" />
+        <img src="./images/leeyunseokarchiveLogo(tp).png" />
       </div>
       <div class="swiper-slide">
         <div class="swiper mySwiper2 swiper-v">
@@ -42,9 +42,6 @@
     <div class="swiper-pagination"></div>
   </div>
 
-  <!-- Swiper JS -->
-  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
-
   <!-- Initialize Swiper -->
   <script>
     var swiper = new Swiper(".mySwiper", {
@@ -57,7 +54,7 @@
         shadowScale: 0.94,
       },
       pagination: {
-        el: ".swiper-pagination",
+        el: ".swiper-pagination", // .mySwiper에만 해당 pagination 적용
         clickable: true,
         bulletClass: 'swiper-pagination-bullet',  // 기본 bullet 클래스
         bulletActiveClass: 'swiper-pagination-bullet-active'  // 활성화된 bullet 클래스
@@ -68,7 +65,7 @@
       direction: "vertical",
       spaceBetween: 50,
       pagination: {
-        el: ".swiper-pagination",
+        el: ".swiper-pagination", // .mySwiper2에만 해당 pagination 적용
         clickable: true,
         bulletClass: 'swiper-pagination-bullet',  // 기본 bullet 클래스
         bulletActiveClass: 'swiper-pagination-bullet-active'  // 활성화된 bullet 클래스

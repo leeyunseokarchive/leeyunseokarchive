@@ -17,7 +17,7 @@ body {
   left: 0px;
   min-width: 340px;
   height: 100%;
-  background-color: #eee;
+  background-color: #eeeeee;
 }
 
 .swiper {
@@ -48,10 +48,10 @@ body {
 
 /* 기본 bullet 색상 */
 .swiper-pagination-bullet {
-  background-color: #ccc;  /* 기본 회색 */
+  background-color: #333333;
 }
 
 /* 활성화된 bullet 색상 */
 .swiper-pagination-bullet-active {
-  background-color: #333333;  /* 파란색, 원하는 색으로 변경 */
+  background-color: #222222;
 }
