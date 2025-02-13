@@ -39,10 +39,17 @@ body {
   align-items: center;
 }
 
-.swiper-slide img {
+.logo {
   display: block;
   width: 80%;
   height: 80%;
+  object-fit: cover;
+}
+
+.icon {
+  display: block;
+  width: 50%;
+  height: 50%;
   object-fit: cover;
 }
 
@@ -53,5 +60,5 @@ body {
 
 /* 활성화된 bullet 색상 */
 .swiper-pagination-bullet-active {
-  background-color: #222222;
+  background-color: #333333;
 }

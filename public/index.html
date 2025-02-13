@@ -21,13 +21,15 @@
 <body>
   <div class="swiper mySwiper swiper-h">
     <div class="swiper-wrapper">
+
       <div class="swiper-slide">
-        <img src="./images/leeyunseokarchiveLogo(tp).png" />
+        <img class="logo" src="./images/leeyunseokarchiveLogoTp.png" />
       </div>
+
       <div class="swiper-slide">
         <div class="swiper mySwiper2 swiper-v">
           <div class="swiper-wrapper">
-            <div class="swiper-slide">Vertical Slide 1</div>
+            <div class="swiper-slide"><img class="icon" src="./images/person.svg" /></div>
             <div class="swiper-slide">Vertical Slide 2</div>
             <div class="swiper-slide">Vertical Slide 3</div>
             <div class="swiper-slide">Vertical Slide 4</div>
@@ -36,40 +38,140 @@
           <div class="swiper-pagination"></div>
         </div>
       </div>
-      <div class="swiper-slide">Horizontal Slide 3</div>
-      <div class="swiper-slide">Horizontal Slide 4</div>
+
+      <div class="swiper-slide">
+        <div class="swiper mySwiper3 swiper-v">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide"><img class="icon" src="./images/code.svg" /></div>
+            <div class="swiper-slide">Vertical Slide 2</div>
+            <div class="swiper-slide">Vertical Slide 3</div>
+            <div class="swiper-slide">Vertical Slide 4</div>
+            <div class="swiper-slide">Vertical Slide 5</div>
+          </div>
+          <div class="swiper-pagination"></div>
+        </div>
+      </div>
+
+      <div class="swiper-slide">
+        <div class="swiper mySwiper4 swiper-v">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide"><img class="icon" src="./images/movie.svg" /></div>
+            <div class="swiper-slide">Vertical Slide 2</div>
+            <div class="swiper-slide">Vertical Slide 3</div>
+            <div class="swiper-slide">Vertical Slide 4</div>
+            <div class="swiper-slide">Vertical Slide 5</div>
+          </div>
+          <div class="swiper-pagination"></div>
+        </div>
+      </div>
+
+      <div class="swiper-slide">
+        <div class="swiper mySwiper5 swiper-v">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide"><img class="icon" src="./images/music.svg" /></div>
+            <div class="swiper-slide">Vertical Slide 2</div>
+            <div class="swiper-slide">Vertical Slide 3</div>
+            <div class="swiper-slide">Vertical Slide 4</div>
+            <div class="swiper-slide">Vertical Slide 5</div>
+          </div>
+          <div class="swiper-pagination"></div>
+        </div>
+      </div>
+
+      <div class="swiper-slide">
+        <div class="swiper mySwiper6 swiper-v">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide"><img class="icon" src="./images/mail.svg" /></div>
+            <div class="swiper-slide">Vertical Slide 2</div>
+            <div class="swiper-slide">Vertical Slide 3</div>
+            <div class="swiper-slide">Vertical Slide 4</div>
+            <div class="swiper-slide">Vertical Slide 5</div>
+          </div>
+          <div class="swiper-pagination"></div>
+        </div>
+      </div>
+
     </div>
     <div class="swiper-pagination"></div>
   </div>
 
   <!-- Initialize Swiper -->
   <script>
-    var swiper = new Swiper(".mySwiper", {
-      effect: "cube",
-      grabCursor: true,
-      cubeEffect: {
-        shadow: true,
-        slideShadows: true,
-        shadowOffset: 20,
-        shadowScale: 0.94,
-      },
-      pagination: {
-        el: ".swiper-pagination", // .mySwiper에만 해당 pagination 적용
-        clickable: true,
-        bulletClass: 'swiper-pagination-bullet',  // 기본 bullet 클래스
-        bulletActiveClass: 'swiper-pagination-bullet-active'  // 활성화된 bullet 클래스
-      },
-      loop: true,
-    });
-    var swiper2 = new Swiper(".mySwiper2", {
-      direction: "vertical",
-      spaceBetween: 50,
-      pagination: {
-        el: ".swiper-pagination", // .mySwiper2에만 해당 pagination 적용
-        clickable: true,
-        bulletClass: 'swiper-pagination-bullet',  // 기본 bullet 클래스
-        bulletActiveClass: 'swiper-pagination-bullet-active'  // 활성화된 bullet 클래스
-      },
+    document.addEventListener("DOMContentLoaded", function () {
+      var swiper = new Swiper(".mySwiper", {
+        initialSlide: 0,  // 첫 번째 슬라이드를 logo로 설정
+        effect: "cube",
+        cubeEffect: {
+          shadow: true,
+          slideShadows: true,
+          shadowOffset: 20,
+          shadowScale: 0.94,
+        },
+        pagination: {
+          el: ".swiper-pagination",
+          clickable: true,
+      bulletClass: 'swiper-pagination-bullet',
+          bulletActiveClass: 'swiper-pagination-bullet-active',
+        },
+        loop: true,
+        loopedSlides: 1,
+      });
+
+      var swiper2 = new Swiper(".mySwiper2", {
+        direction: "vertical",
+        spaceBetween: 50,
+        pagination: {
+          el: ".swiper-pagination",
+          clickable: true,
+          bulletClass: 'swiper-pagination-bullet',
+          bulletActiveClass: 'swiper-pagination-bullet-active',
+        },
+      });
+
+      var swiper2 = new Swiper(".mySwiper3", {
+        direction: "vertical",
+        spaceBetween: 50,
+        pagination: {
+          el: ".swiper-pagination",
+          clickable: true,
+          bulletClass: 'swiper-pagination-bullet',
+          bulletActiveClass: 'swiper-pagination-bullet-active',
+        },
+      });
+
+      var swiper2 = new Swiper(".mySwiper4", {
+        direction: "vertical",
+        spaceBetween: 50,
+        pagination: {
+          el: ".swiper-pagination",
+          clickable: true,
+          bulletClass: 'swiper-pagination-bullet',
+          bulletActiveClass: 'swiper-pagination-bullet-active',
+        },
+      });
+
+      var swiper2 = new Swiper(".mySwiper5", {
+        direction: "vertical",
+        spaceBetween: 50,
+        pagination: {
+          el: ".swiper-pagination",
+          clickable: true,
+          bulletClass: 'swiper-pagination-bullet',
+          bulletActiveClass: 'swiper-pagination-bullet-active',
+        },
+      });
+
+      var swiper2 = new Swiper(".mySwiper6", {
+        direction: "vertical",
+        spaceBetween: 50,
+        pagination: {
+          el: ".swiper-pagination",
+          clickable: true,
+          bulletClass: 'swiper-pagination-bullet',
+          bulletActiveClass: 'swiper-pagination-bullet-active',
+        },
+      });
+
     });
   </script>
 </body>
