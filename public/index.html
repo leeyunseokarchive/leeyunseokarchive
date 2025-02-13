@@ -1,385 +1,79 @@
 <!DOCTYPE html>
-<html lang="ko">
+<html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=0">
-    <title>Leeyunseok Archive</title>
+  <meta charset="UTF-8">
+  <meta name="viewport"
+    content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1, user-scalable=0" />
+  <title>Leeyunseok Archive</title>
 
-    <link rel="icon" href="data:,">
-    <link rel="stylesheet" href="./reset.css">
-    <link rel="stylesheet" href="./style.css">
-    <script src="./zoomDisabler.js" defer></script>
-    <script src="https://code.jquery.com/jquery-3.7.1.min.js"
-        integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+  <link rel="icon" href="data:,">
+  <link rel="stylesheet" href="./reset.css">
+  <link rel="stylesheet" href="./style.css">
+
+  <script src="./zoomDisabler.js" defer></script>
+  <script src="https://code.jquery.com/jquery-3.7.1.min.js"
+    integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
 </head>
 
 <body>
-  <div class="nav">
-    <A href="https://leeyunseokarchive.web.app/">Leeyunseok Archive </A>
-    <div class="nav-items">
-      <div class="nav-item">Instargram</div>
-      <div class="nav-item">
-        <A href="https://www.instagram.com/oskueny/">@oskueny </A>
+  <div class="swiper mySwiper swiper-h">
+    <div class="swiper-wrapper">
+      <div class="swiper-slide">
+        <img src="images/leeyunseokarchiveLogo(투명).png" />
       </div>
-    </div>
-  </div>
-  <div class="name">
-    <A href="https://leeyunseokarchive.web.app/">Leeyunseok Archive </A>
-  </div>
-
-  <div class="description">
-    This page is Leeyunseok's Archiving Page.
-  </div>
-
-  <div class="satelliteLogo">
-    <div class="satellites"></div>
-    <div class="satellites2"></div>
-  </div>
-
-  <div class="Menu">
-    <div class="smallTitle">
-      · Menu ·
-    </div>
-
-    <div class="container">
-      <button class="prevButton">◀</button>
-      <div class="innerContainer">
-        <button class="menuButton"></button>
-        <div class="slide_wrap">
-          <div class="slide_box">
-            <div class="slide_list clearfix">
-
-              <div class="slide_content slide00">
-                <p>
-                  <b>leeyunseokarchive</b>
-                  <br>Youtube
-                </p>
-              </div>
-              <div class="slide_content slide01">
-                <p>
-                  <b>oskueny</b>
-                  <br>Instagram
-                </p>
-              </div>
-              <div class="slide_content slide02">
-                <p>
-                  <b>Leeyunseok</b>
-                  <br>Portfolio
-                </p>
-              </div>
-              <div class="slide_content slide03">
-                <p>
-                  <b>leeyunseokarchive</b>
-                  <br>Github
-                </p>
-              </div>
-              <div class="slide_content slide04">
-                <p>
-                  <b>이백삼</b>
-                  <br>Sound Cloud
-                </p>
-              </div>
-
-            </div>
+      <div class="swiper-slide">
+        <div class="swiper mySwiper2 swiper-v">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide">Vertical Slide 1</div>
+            <div class="swiper-slide">Vertical Slide 2</div>
+            <div class="swiper-slide">Vertical Slide 3</div>
+            <div class="swiper-slide">Vertical Slide 4</div>
+            <div class="swiper-slide">Vertical Slide 5</div>
           </div>
+          <div class="swiper-pagination"></div>
         </div>
       </div>
-      <button class="nextButton">▶</button>
-      <ul class="slide_pagination"></ul>
+      <div class="swiper-slide">Horizontal Slide 3</div>
+      <div class="swiper-slide">Horizontal Slide 4</div>
     </div>
-
+    <div class="swiper-pagination"></div>
   </div>
 
-  <div class="music">
-    <div class="smallTitle">
-      · Music ·
-    </div>
-    <audio preload="auto" id='audio1' src='./audios/Bad.mp3'>
-    </audio>
-    <audio preload="auto" id='audio2' src='./audios/Cheapest Flight.mp3'>
-    </audio>
-    <audio preload="auto" id='audio3' src='./audios/Difference.mp3'>
-    </audio>
-    <audio preload="auto" id='audio4' src='./audios/Nouvelle vague.mp3'>
-    </audio>
-    <audio preload="auto" id='audio5' src='./audios/Photograph.mp3'>
-    </audio>
-    <audio preload="auto" id='audio6' src='./audios/Pueblo.mp3'>
-    </audio>
-    <audio preload="auto" id='audio7' src='./audios/Seasons.mp3'>
-    </audio>
-    <audio preload="auto" id='audio8' src='./audios/Misty.mp3'>
-    </audio>
-    <audio preload="auto" id='audio9' src='./audios/Blue room.mp3'>
-    </audio>
-    <div class="musicBox">
-      <div class="musicButton">
-        <button onclick="play(audio1); toggleBackgroundColor('#FCEDDA');"></button>
-      </div>
-      <div class="musicIndex">
-        <b>Bad</b>
-        <br>wave to earth
-      </div>
-    </div>
+  <!-- Swiper JS -->
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
 
-    <div class="musicBox">
-      <div class="musicButton">
-        <button onclick="play(audio2); toggleBackgroundColor('#CCF381');"></button>
-      </div>
-      <div class="musicIndex">
-        <b>Cheapest Flight</b>
-        <br>PREP
-      </div>
-    </div>
-
-    <div class="musicBox">
-      <div class="musicButton">
-        <button onclick="play(audio3); toggleBackgroundColor('#F7C5CC');"></button>
-      </div>
-      <div class="musicIndex">
-        <b>Difference</b>
-        <br>dasutt
-      </div>
-    </div>
-
-    <div class="musicBox">
-      <div class="musicButton">
-        <button onclick="play(audio4); toggleBackgroundColor('#B85042');"></button>
-      </div>
-      <div class="musicIndex">
-        <b>Nouvelle vague</b>
-        <br>wave to earth
-      </div>
-    </div>
-
-    <div class="musicBox">
-      <div class="musicButton">
-        <button onclick="play(audio5); toggleBackgroundColor('#DDC3A5');"></button>
-      </div>
-      <div class="musicIndex">
-        <b>Photograph</b>
-        <br>wave to earth
-      </div>
-    </div>
-
-    <div class="musicBox">
-      <div class="musicButton">
-        <button onclick="play(audio6); toggleBackgroundColor('#A7BEAE');"></button>
-      </div>
-      <div class="musicIndex">
-        <b>Pueblo</b>
-        <br>wave to earth
-      </div>
-    </div>
-
-    <div class="musicBox">
-      <div class="musicButton">
-        <button onclick="play(audio7); toggleBackgroundColor('#6883BC');"></button>
-      </div>
-      <div class="musicIndex">
-        <b>Seasons</b>
-        <br>wave to earth
-      </div>
-    </div>
-
-    <div class="musicBox">
-      <div class="musicButton">
-        <button onclick="play(audio8); toggleBackgroundColor('#CCCCFF');"></button>
-      </div>
-      <div class="musicIndex">
-        <b>Misty</b>
-        <br>Ella Fitzgerald
-      </div>
-    </div>
-
-    <div class="musicBox">
-      <div class="musicButton">
-        <button onclick="play(audio9); toggleBackgroundColor('#9FA8DA');"></button>
-      </div>
-      <div class="musicIndex">
-        <b>Blue Room</b>
-        <br>Chet Baker
-      </div>
-    </div>
-
-  </div>
-
+  <!-- Initialize Swiper -->
   <script>
-    function play(musicName) {
-
-      var audio = musicName;
-      if (audio.paused) {
-        audio.play();
-        audio.volume = 0.3;
-      } else {
-        audio.pause();
-        audio.currentTime = 0
-      }
-    }
-
-    function changeBackground(color) {
-      var color = color;
-
-    }
-
-    /** 노래 중복 재생 막는 함수 */
-    document.addEventListener('play', function (e) {
-      var audios = document.getElementsByTagName('audio');
-      for (var i = 0, len = audios.length; i < len; i++) {
-        if (audios[i] != e.target) {
-          audios[i].pause();
-          audios[i].currentTime = 0
-        }
-      }
-    }, true);
-
-    /** 배경색 바꾸는 함수 */
-    var currentColor = 'white';
-    function toggleBackgroundColor(targetColor) {
-      var body = document.body;
-
-      if (currentColor === targetColor) {
-        body.style.backgroundColor = 'white';
-        currentColor = 'white';
-      } else {
-        body.style.backgroundColor = targetColor;
-        currentColor = targetColor;
-      }
-    }
-
-    /** 슬라이드, 무한 슬라이드, 페기네이션 구현 함수*/
-    (function () {
-      const slideList = document.querySelector('.slide_list');  // Slide parent dom
-      const slideContents = document.querySelectorAll('.slide_content');  // each slide dom
-      const menuButton = document.querySelector('.menuButton'); // menu button
-      const slideBtnNext = document.querySelector('.nextButton'); // next button
-      const slideBtnPrev = document.querySelector('.prevButton'); // prev button
-      const pagination = document.querySelector('.slide_pagination');
-      const slideLen = slideContents.length;  // slide length
-      const slideWidth = 200; // slide width
-      const slideSpeed = 300; // slide speed
-      const startNum = 0; // initial slide index (0 ~ 4)
-
-      slideList.style.width = slideWidth * (slideLen + 2) + "px";
-
-      // Copy first and last slide
-      let firstChild = slideList.firstElementChild;
-      let lastChild = slideList.lastElementChild;
-      let clonedFirst = firstChild.cloneNode(true);
-      let clonedLast = lastChild.cloneNode(true);
-
-      // Add copied Slides
-      slideList.appendChild(clonedFirst);
-      slideList.insertBefore(clonedLast, slideList.firstElementChild);
-
-      // Add pagination dynamically
-      let pageChild = '';
-      for (var i = 0; i < slideLen; i++) {
-        pageChild += '<li class="dot';
-        pageChild += (i === startNum) ? ' dot_active' : '';
-        pageChild += '" data-index="' + i + '"><a href="#"></a></li>';
-      }
-      pagination.innerHTML = pageChild;
-      const pageDots = document.querySelectorAll('.dot'); // each dot from pagination
-
-      slideList.style.transform = "translate3d(-" + (slideWidth * (startNum + 1)) + "px, 0px, 0px)";
-
-      let curIndex = startNum; // current slide index (except copied slide)
-      let curSlide = slideContents[curIndex]; // current slide dom
-      curSlide.classList.add('slide_active');
-
-      /** Menu Button Event */
-      menuButton.addEventListener('click', function () {
-        if (curIndex == 0) {
-          window.open('https://www.youtube.com/@leeyunseokarchive'); // youtube
-        }
-        else if (curIndex == 1) {
-          window.open('https://www.instagram.com/oskueny/'); // instagram
-        }
-        else if (curIndex == 2) {
-          window.open('https://leeyunseok-b248d.web.app/'); // leeyunseok portfolio
-        }
-        else if (curIndex == 3) {
-          window.open('https://github.com/leeyunseokarchive'); // github
-        }
-        else if (curIndex == 4) {
-          window.open('https://on.soundcloud.com/xKKVA'); // sound cloud
-        }
-
-      });
-
-      /** Next Button Event */
-      slideBtnNext.addEventListener('click', function () {
-        if (curIndex <= slideLen - 1) {
-          slideList.style.transition = slideSpeed + "ms";
-          slideList.style.transform = "translate3d(-" + (slideWidth * (curIndex + 2)) + "px, 0px, 0px)";
-        }
-        if (curIndex === slideLen - 1) {
-          setTimeout(function () {
-            slideList.style.transition = "0ms";
-            slideList.style.transform = "translate3d(-" + slideWidth + "px, 0px, 0px)";
-          }, slideSpeed);
-          curIndex = -1;
-        }
-        curSlide.classList.remove('slide_active');
-        pageDots[(curIndex === -1) ? slideLen - 1 : curIndex].classList.remove('dot_active');
-        curSlide = slideContents[++curIndex];
-        curSlide.classList.add('slide_active');
-        pageDots[curIndex].classList.add('dot_active');
-      });
-
-      /** Prev Button Event */
-      slideBtnPrev.addEventListener('click', function () {
-        if (curIndex >= 0) {
-          slideList.style.transition = slideSpeed + "ms";
-          slideList.style.transform = "translate3d(-" + (slideWidth * curIndex) + "px, 0px, 0px)";
-        }
-        if (curIndex === 0) {
-          setTimeout(function () {
-            slideList.style.transition = "0ms";
-            slideList.style.transform = "translate3d(-" + (slideWidth * slideLen) + "px, 0px, 0px)";
-          }, slideSpeed);
-          curIndex = slideLen;
-        }
-        curSlide.classList.remove('slide_active');
-        pageDots[(curIndex === slideLen) ? 0 : curIndex].classList.remove('dot_active');
-        curSlide = slideContents[--curIndex];
-        curSlide.classList.add('slide_active');
-        pageDots[curIndex].classList.add('dot_active');
-      });
-
-      /** Pagination Button Event */
-      let curDot;
-      Array.prototype.forEach.call(pageDots, function (dot, i) {
-        dot.addEventListener('click', function (e) {
-          e.preventDefault();
-          curDot = document.querySelector('.dot_active');
-          curDot.classList.remove('dot_active');
-
-          curDot = this;
-          this.classList.add('dot_active');
-
-          curSlide.classList.remove('slide_active');
-          curIndex = Number(this.getAttribute('data-index'));
-          curSlide = slideContents[curIndex];
-          curSlide.classList.add('slide_active');
-          slideList.style.transition = slideSpeed + "ms";
-          slideList.style.transform = "translate3d(-" + (slideWidth * (curIndex + 1)) + "px, 0px, 0px)";
-        });
-      });
-    })();
-
-    var sateliteNum = 15;
-    var sateliteDegree = 360 / sateliteNum;
-
-    for (let i = 0; i < sateliteNum; i++) {
-      var template = `<div class="satellite" style="--i: ${sateliteDegree * i}"><span>Leeyunseok</span></div>`;
-      var template2 = `<div class="satellite" style="--i: ${sateliteDegree * i}"><span>Archive</span></div>`;
-      console.log(sateliteDegree * i);
-      $(".satellites").append(template);
-      $(".satellites2").append(template2);
-    }
+    var swiper = new Swiper(".mySwiper", {
+      effect: "cube",
+      grabCursor: true,
+      cubeEffect: {
+        shadow: true,
+        slideShadows: true,
+        shadowOffset: 20,
+        shadowScale: 0.94,
+      },
+      pagination: {
+        el: ".swiper-pagination",
+        clickable: true,
+        bulletClass: 'swiper-pagination-bullet',  // 기본 bullet 클래스
+        bulletActiveClass: 'swiper-pagination-bullet-active'  // 활성화된 bullet 클래스
+      },
+      loop: true,
+    });
+    var swiper2 = new Swiper(".mySwiper2", {
+      direction: "vertical",
+      spaceBetween: 50,
+      pagination: {
+        el: ".swiper-pagination",
+        clickable: true,
+        bulletClass: 'swiper-pagination-bullet',  // 기본 bullet 클래스
+        bulletActiveClass: 'swiper-pagination-bullet-active'  // 활성화된 bullet 클래스
+      },
+    });
   </script>
 </body>
 
