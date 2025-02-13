@@ -6,101 +6,162 @@
   <meta name="viewport"
     content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1, user-scalable=0" />
   <title>Leeyunseok Archive</title>
-
+  <!-- 구글 폰트 추가 -->
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300;400;500;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
   <link rel="icon" href="data:,">
   <link rel="stylesheet" href="./reset.css">
   <link rel="stylesheet" href="./style.css">
-
   <script src="./zoomDisabler.js" defer></script>
-  <script src="https://code.jquery.com/jquery-3.7.1.min.js"
-    integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
   <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
 </head>
 
 <body>
-  <div class="swiper mySwiper swiper-h">
+  <div class="swiper mySwiper">
     <div class="swiper-wrapper">
-
       <div class="swiper-slide">
-        <img class="logo" src="./images/leeyunseokarchiveLogoTp.png" />
+        <img class="logo" src="./images/leeyunseokarchiveLogoTp.png" alt="Logo" onclick="window.location.reload();" />
       </div>
-
       <div class="swiper-slide">
-        <div class="swiper mySwiper2 swiper-v">
+        <div class="swiper mySwiper2">
           <div class="swiper-wrapper">
-            <div class="swiper-slide"><img class="icon" src="./images/person.svg" /></div>
-            <div class="swiper-slide">Vertical Slide 2</div>
-            <div class="swiper-slide">Vertical Slide 3</div>
-            <div class="swiper-slide">Vertical Slide 4</div>
-            <div class="swiper-slide">Vertical Slide 5</div>
+            <div class="swiper-slide"><img class="icon" src="./images/person.svg" alt="Person Icon" /></div>
+            <div class="swiper-slide">
+              <p class="textBox">
+                <span class="title">Lee Yunseok</span>
+                <br>
+                May 1, 2003
+                <br>
+                Daejeon, Korea
+                <br>
+                AI Dept., Undergrad
+                <br>
+                Programming Student
+                <br>
+                Video Producer
+              </p>
+            </div>
+            <div class="swiper-slide">
+              <p class="textBox">
+                <span class="title">Technologies</span>
+                <br>
+                Premiere Pro
+                <br>
+                After Effects
+                <br>
+                Photoshop
+                <br>
+                Java
+                <br>
+                Python
+                <br>
+                HTML/JS/CSS
+              </p>
+            </div>
+            <div class="swiper-slide">
+              <div class="content">
+                <span class="title">Insta</span>
+                <img class="innerIcon" src="./images/camera.svg"
+                  onclick="window.open('https://www.instagram.com/oskueny', '_blank');" />
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="content">
+                <span class="title">Youtube</span>
+                <img class="innerIcon" src="./images/youtube.svg"
+                  onclick="window.open('https://www.youtube.com/@leeyunseokarchive', '_blank');" />
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="content">
+                <span class="title">Email</span>
+                <!-- 이메일 아이콘 클릭 시 클립보드로 이메일 복사 -->
+                <img class="innerIcon" src="./images/mail.svg" onclick="copyEmail();" />
+              </div>
+            </div>
           </div>
           <div class="swiper-pagination"></div>
         </div>
       </div>
-
       <div class="swiper-slide">
-        <div class="swiper mySwiper3 swiper-v">
+        <div class="swiper mySwiper3">
           <div class="swiper-wrapper">
-            <div class="swiper-slide"><img class="icon" src="./images/code.svg" /></div>
-            <div class="swiper-slide">Vertical Slide 2</div>
-            <div class="swiper-slide">Vertical Slide 3</div>
-            <div class="swiper-slide">Vertical Slide 4</div>
-            <div class="swiper-slide">Vertical Slide 5</div>
+            <div class="swiper-slide"><img class="icon" src="./images/code.svg" alt="Code Icon" /></div>
+            <div class="swiper-slide">
+              <p class="textBox">
+                <span class="title">Experience</span>
+                <br>
+                2022 - Present
+                <br>
+                Specializing in HTML, JavaScript for web development, and applied Python for data analysis.
+              </p>
+            </div>
+            <div class="swiper-slide">
+              <div class="content">
+                <span class="title">Github</span>
+                <img class="innerIcon" src="./images/git.svg"
+                  onclick="window.open('https://github.com/leeyunseokarchive', '_blank');" />
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="content">
+                <span class="title">. . .</span>
+              </div>
+            </div>
           </div>
           <div class="swiper-pagination"></div>
         </div>
       </div>
-
       <div class="swiper-slide">
-        <div class="swiper mySwiper4 swiper-v">
+        <div class="swiper mySwiper4">
           <div class="swiper-wrapper">
-            <div class="swiper-slide"><img class="icon" src="./images/movie.svg" /></div>
-            <div class="swiper-slide">Vertical Slide 2</div>
-            <div class="swiper-slide">Vertical Slide 3</div>
-            <div class="swiper-slide">Vertical Slide 4</div>
-            <div class="swiper-slide">Vertical Slide 5</div>
+            <div class="swiper-slide"><img class="icon" src="./images/movie.svg" alt="Movie Icon" /></div>
+            <div class="swiper-slide">
+              <p class="textBox">
+                <span class="title">Experience</span>
+                <br>
+                Edited over 200 freelance videos in diverse fields such as real estate, conferences, and youtube channels.
+              </p>
+            </div>
+            <div class="swiper-slide">
+              <div class="content">
+                <span class="title">Real Estate<br>Information Video</span>
+                <img class="innerIcon" src="./images/open.svg"
+                  onclick="window.open('https://youtu.be/g-E_lxZeQ-k', '_blank');" />
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="content">
+                <span class="title">Hair Lookbook<br>Video</span>
+                <img class="innerIcon" src="./images/open.svg"
+                  onclick="window.open('https://youtu.be/2jPQUzvk_Pc', '_blank');" />
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="content">
+                <span class="title">Travel Cinematic<br>Music Video</span>
+                <img class="innerIcon" src="./images/open.svg"
+                  onclick="window.open('https://youtu.be/vCEc9VPl5c0?si=TDsrxbHs7qGDsOau', '_blank');" />
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="content">
+                <span class="title">. . .</span>
+              </div>
+            </div>
           </div>
           <div class="swiper-pagination"></div>
         </div>
       </div>
-
-      <div class="swiper-slide">
-        <div class="swiper mySwiper5 swiper-v">
-          <div class="swiper-wrapper">
-            <div class="swiper-slide"><img class="icon" src="./images/music.svg" /></div>
-            <div class="swiper-slide">Vertical Slide 2</div>
-            <div class="swiper-slide">Vertical Slide 3</div>
-            <div class="swiper-slide">Vertical Slide 4</div>
-            <div class="swiper-slide">Vertical Slide 5</div>
-          </div>
-          <div class="swiper-pagination"></div>
-        </div>
-      </div>
-
-      <div class="swiper-slide">
-        <div class="swiper mySwiper6 swiper-v">
-          <div class="swiper-wrapper">
-            <div class="swiper-slide"><img class="icon" src="./images/mail.svg" /></div>
-            <div class="swiper-slide">Vertical Slide 2</div>
-            <div class="swiper-slide">Vertical Slide 3</div>
-            <div class="swiper-slide">Vertical Slide 4</div>
-            <div class="swiper-slide">Vertical Slide 5</div>
-          </div>
-          <div class="swiper-pagination"></div>
-        </div>
-      </div>
-
     </div>
-    <div class="swiper-pagination"></div>
+    <div class="swiper-pagination h-pagination"></div>
   </div>
 
-  <!-- Initialize Swiper -->
   <script>
     document.addEventListener("DOMContentLoaded", function () {
       var swiper = new Swiper(".mySwiper", {
-        initialSlide: 0,  // 첫 번째 슬라이드를 logo로 설정
         effect: "cube",
+        grabCursor: true,
         cubeEffect: {
           shadow: true,
           slideShadows: true,
@@ -108,71 +169,34 @@
           shadowScale: 0.94,
         },
         pagination: {
-          el: ".swiper-pagination",
+          el: ".swiper-pagination.h-pagination",
           clickable: true,
-      bulletClass: 'swiper-pagination-bullet',
-          bulletActiveClass: 'swiper-pagination-bullet-active',
         },
         loop: true,
-        loopedSlides: 1,
       });
 
-      var swiper2 = new Swiper(".mySwiper2", {
-        direction: "vertical",
-        spaceBetween: 50,
-        pagination: {
-          el: ".swiper-pagination",
-          clickable: true,
-          bulletClass: 'swiper-pagination-bullet',
-          bulletActiveClass: 'swiper-pagination-bullet-active',
-        },
+      var verticalSwipers = [".mySwiper2", ".mySwiper3", ".mySwiper4"];
+      verticalSwipers.forEach(function (selector) {
+        new Swiper(selector, {
+          direction: "vertical",
+          spaceBetween: 50,
+          pagination: {
+            el: ".swiper-pagination",
+            clickable: true,
+          },
+        });
       });
-
-      var swiper2 = new Swiper(".mySwiper3", {
-        direction: "vertical",
-        spaceBetween: 50,
-        pagination: {
-          el: ".swiper-pagination",
-          clickable: true,
-          bulletClass: 'swiper-pagination-bullet',
-          bulletActiveClass: 'swiper-pagination-bullet-active',
-        },
-      });
-
-      var swiper2 = new Swiper(".mySwiper4", {
-        direction: "vertical",
-        spaceBetween: 50,
-        pagination: {
-          el: ".swiper-pagination",
-          clickable: true,
-          bulletClass: 'swiper-pagination-bullet',
-          bulletActiveClass: 'swiper-pagination-bullet-active',
-        },
-      });
-
-      var swiper2 = new Swiper(".mySwiper5", {
-        direction: "vertical",
-        spaceBetween: 50,
-        pagination: {
-          el: ".swiper-pagination",
-          clickable: true,
-          bulletClass: 'swiper-pagination-bullet',
-          bulletActiveClass: 'swiper-pagination-bullet-active',
-        },
-      });
-
-      var swiper2 = new Swiper(".mySwiper6", {
-        direction: "vertical",
-        spaceBetween: 50,
-        pagination: {
-          el: ".swiper-pagination",
-          clickable: true,
-          bulletClass: 'swiper-pagination-bullet',
-          bulletActiveClass: 'swiper-pagination-bullet-active',
-        },
-      });
-
     });
+
+    // 이메일을 클립보드에 복사하는 함수
+    function copyEmail() {
+      var email = 'dbstjr3576@naver.com'; // 여기에 이메일
+      navigator.clipboard.writeText(email).then(function () {
+        alert('Email successfully copied to clipboard!');
+      }).catch(function (error) {
+        alert('Failed to copy email to clipboard.');
+      });
+    }
   </script>
 </body>
 

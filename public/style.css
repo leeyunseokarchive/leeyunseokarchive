@@ -11,6 +11,7 @@ html {
 }
 
 body {
+  font-family: 'Noto Sans KR', sans-serif;
   touch-action: pan-y, pan-x;
   position: relative;
   top: 0px;
@@ -53,6 +54,26 @@ body {
   object-fit: cover;
 }
 
+/* 페이지네이션 기본 스타일 */
+.swiper-pagination {
+  opacity: 1;
+  transition: opacity 0.5s ease;
+}
+
+/* 페이지네이션이 비활성화될 때의 스타일 */
+.swiper-pagination.inactive {
+  opacity: 0;
+}
+
+.swiper-pagination.h-pagination {
+  position: absolute;
+  top: -30px;
+  /* Adjust this value as needed */
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: -100;
+}
+
 /* 기본 bullet 색상 */
 .swiper-pagination-bullet {
   background-color: #333333;
@@ -61,4 +82,30 @@ body {
 /* 활성화된 bullet 색상 */
 .swiper-pagination-bullet-active {
   background-color: #333333;
+}
+
+.content {
+  display: flex;
+  flex-direction: column; /* 세로로 정렬 */
+  align-items: center; /* 가운데 정렬 */
+  text-align: center; /* 텍스트 가운데 정렬 */
+}
+
+.textBox {
+   width: 180px;
+   text-align: left;
+}
+
+.title {
+  display: inline-block;
+  font-size: 1.2em;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.innerIcon {
+  display: block;
+  width: 50px;
+  height: 50px;
+  object-fit: cover;
 }
