@@ -17,146 +17,162 @@
 </head>
 
 <body>
-  <div class="swiper mySwiper">
-    <div class="swiper-wrapper">
-      <div class="swiper-slide">
-        <img class="logo" src="./images/leeyunseokarchiveLogoTp.png" alt="Logo" onclick="window.location.reload();" />
-      </div>
-      <div class="swiper-slide">
-        <div class="swiper mySwiper2">
-          <div class="swiper-wrapper">
-            <div class="swiper-slide"><img class="icon" src="./images/person.svg" alt="Person Icon" /></div>
-            <div class="swiper-slide">
-              <p class="textBox">
-                <span class="title">Lee Yunseok</span>
-                <br>
-                May 1, 2003
-                <br>
-                Daejeon, Korea
-                <br>
-                AI Dept., Undergrad
-                <br>
-                Programming Student
-                <br>
-                Video Producer
-              </p>
-            </div>
-            <div class="swiper-slide">
-              <p class="textBox">
-                <span class="title">Technologies</span>
-                <br>
-                Premiere Pro
-                <br>
-                After Effects
-                <br>
-                Photoshop
-                <br>
-                Java
-                <br>
-                Python
-                <br>
-                HTML/JS/CSS
-              </p>
-            </div>
-            <div class="swiper-slide">
-              <div class="content">
-                <span class="title">Insta</span>
-                <img class="innerIcon" src="./images/camera.svg"
-                  onclick="window.open('https://www.instagram.com/oskueny', '_blank');" />
+  <div class="screen1">
+    <div class="swiper mySwiper">
+      <div class="swiper-wrapper">
+        <div class="swiper-slide">
+          <img class="logo" src="./images/leeyunseokarchiveLogoTp.png" alt="Logo" onclick="window.location.reload();" />
+        </div>
+        <div class="swiper-slide">
+          <div class="swiper mySwiper2">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide"><img class="icon" src="./images/person.svg" alt="Person Icon" /></div>
+              <div class="swiper-slide">
+                <p class="textBox">
+                  <span class="title">Lee Yunseok</span>
+                  <br>
+                  May 1, 2003
+                  <br>
+                  Daejeon, Korea
+                  <br>
+                  AI Dept., Undergrad
+                  <br>
+                  Programming Student
+                  <br>
+                  Video Producer
+                </p>
+              </div>
+              <div class="swiper-slide">
+                <p class="textBox">
+                  <span class="title">Technologies</span>
+                  <br>
+                  Premiere Pro
+                  <br>
+                  After Effects
+                  <br>
+                  Photoshop
+                  <br>
+                  Java
+                  <br>
+                  Python
+                  <br>
+                  HTML/JS/CSS
+                </p>
+              </div>
+              <div class="swiper-slide">
+                <div class="content">
+                  <span class="title">Insta</span>
+                  <img class="innerIcon" src="./images/camera.svg"
+                    onclick="window.open('https://www.instagram.com/oskueny', '_blank');" />
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="content">
+                  <span class="title">Youtube</span>
+                  <img class="innerIcon" src="./images/youtube.svg"
+                    onclick="window.open('https://www.youtube.com/@leeyunseokarchive', '_blank');" />
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="content">
+                  <span class="title">Email</span>
+                  <!-- 이메일 아이콘 클릭 시 클립보드로 이메일 복사 -->
+                  <img class="innerIcon" src="./images/mail.svg" onclick="copyEmail();" />
+                </div>
               </div>
             </div>
-            <div class="swiper-slide">
-              <div class="content">
-                <span class="title">Youtube</span>
-                <img class="innerIcon" src="./images/youtube.svg"
-                  onclick="window.open('https://www.youtube.com/@leeyunseokarchive', '_blank');" />
-              </div>
-            </div>
-            <div class="swiper-slide">
-              <div class="content">
-                <span class="title">Email</span>
-                <!-- 이메일 아이콘 클릭 시 클립보드로 이메일 복사 -->
-                <img class="innerIcon" src="./images/mail.svg" onclick="copyEmail();" />
-              </div>
-            </div>
+            <div class="swiper-pagination"></div>
           </div>
-          <div class="swiper-pagination"></div>
+        </div>
+        <div class="swiper-slide">
+          <div class="swiper mySwiper3">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide"><img class="icon" src="./images/code.svg" alt="Code Icon" /></div>
+              <div class="swiper-slide">
+                <p class="textBox">
+                  <span class="title">Experience</span>
+                  <br>
+                  2022 - Present
+                  <br>
+                  Specializing in HTML, JavaScript for web development, and applied Python for data analysis.
+                </p>
+              </div>
+              <div class="swiper-slide">
+                <div class="content">
+                  <span class="title">Github</span>
+                  <img class="innerIcon" src="./images/git.svg"
+                    onclick="window.open('https://github.com/leeyunseokarchive', '_blank');" />
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="content">
+                  <span class="title">. . .</span>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-pagination"></div>
+          </div>
+        </div>
+        <div class="swiper-slide">
+          <div class="swiper mySwiper4">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide"><img class="icon" src="./images/movie.svg" alt="Movie Icon" /></div>
+              <div class="swiper-slide">
+                <p class="textBox">
+                  <span class="title">Experience</span>
+                  <br>
+                  2017 - Present
+                  <br>
+                  Edited over 200 freelance videos in diverse fields such as real estate, conferences, and youtube
+                  channels.
+                </p>
+              </div>
+              <div class="swiper-slide">
+                <div class="content">
+                  <span class="title">Real Estate<br>Information Video</span>
+                  <img class="innerIcon" src="./images/open.svg" onclick=moveToNextScreen() />
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="content">
+                  <span class="title">. . .</span>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-pagination"></div>
+          </div>
         </div>
       </div>
-      <div class="swiper-slide">
-        <div class="swiper mySwiper3">
-          <div class="swiper-wrapper">
-            <div class="swiper-slide"><img class="icon" src="./images/code.svg" alt="Code Icon" /></div>
-            <div class="swiper-slide">
-              <p class="textBox">
-                <span class="title">Experience</span>
-                <br>
-                2022 - Present
-                <br>
-                Specializing in HTML, JavaScript for web development, and applied Python for data analysis.
-              </p>
+      <div class="swiper-pagination h-pagination"></div>
+    </div>
+  </div>
+
+  <div class="screen2">
+    <button class="backButton" onclick="moveBack()">Back</button>
+    <div class="swiper mySwiper5">
+      <div class="swiper-wrapper">
+        <div class="swiper-slide">
+          <div class="video-container">
+            <div class="yt-player" data-id="MxBRpWcXeOA"></div>
             </div>
-            <div class="swiper-slide">
-              <div class="content">
-                <span class="title">Github</span>
-                <img class="innerIcon" src="./images/git.svg"
-                  onclick="window.open('https://github.com/leeyunseokarchive', '_blank');" />
-              </div>
-            </div>
-            <div class="swiper-slide">
-              <div class="content">
-                <span class="title">. . .</span>
-              </div>
-            </div>
-          </div>
-          <div class="swiper-pagination"></div>
         </div>
-      </div>
-      <div class="swiper-slide">
-        <div class="swiper mySwiper4">
-          <div class="swiper-wrapper">
-            <div class="swiper-slide"><img class="icon" src="./images/movie.svg" alt="Movie Icon" /></div>
-            <div class="swiper-slide">
-              <p class="textBox">
-                <span class="title">Experience</span>
-                <br>
-                2017 - Present
-                <br>
-                Edited over 200 freelance videos in diverse fields such as real estate, conferences, and youtube channels.
-              </p>
+        <div class="swiper-slide">
+          <div class="video-container">
+            <div class="yt-player" data-id="MxBRpWcXeOA"></div>
             </div>
-            <div class="swiper-slide">
-              <div class="content">
-                <span class="title">Real Estate<br>Information Video</span>
-                <img class="innerIcon" src="./images/open.svg"
-                  onclick="window.open('https://youtu.be/g-E_lxZeQ-k', '_blank');" />
-              </div>
+        </div>
+        <div class="swiper-slide">
+          <div class="video-container">
+            <div class="yt-player" data-id="MxBRpWcXeOA"></div>
             </div>
-            <div class="swiper-slide">
-              <div class="content">
-                <span class="title">Hair Lookbook<br>Video</span>
-                <img class="innerIcon" src="./images/open.svg"
-                  onclick="window.open('https://youtu.be/2jPQUzvk_Pc', '_blank');" />
-              </div>
+        </div>
+        <div class="swiper-slide">
+          <div class="video-container">
+            <div class="yt-player" data-id="MxBRpWcXeOA"></div>
             </div>
-            <div class="swiper-slide">
-              <div class="content">
-                <span class="title">Travel Cinematic<br>Music Video</span>
-                <img class="innerIcon" src="./images/open.svg"
-                  onclick="window.open('https://youtu.be/vCEc9VPl5c0?si=TDsrxbHs7qGDsOau', '_blank');" />
-              </div>
-            </div>
-            <div class="swiper-slide">
-              <div class="content">
-                <span class="title">. . .</span>
-              </div>
-            </div>
-          </div>
-          <div class="swiper-pagination"></div>
         </div>
       </div>
     </div>
-    <div class="swiper-pagination h-pagination"></div>
   </div>
 
   <script>
@@ -188,6 +204,23 @@
           },
         });
       });
+
+      var swiper5 = new Swiper(".mySwiper5", {
+        direction: "vertical", // 세로 슬라이드 설정
+        centeredSlides: true, // 활성화된 슬라이드가 중앙에 오도록 설정
+        coverflowEffect: {
+          rotate: 50, // 회전 각도 설정
+          stretch: 0, // 슬라이드가 늘어나는 정도
+          depth: 150, // 깊이 설정
+          modifier: 1, // 효과의 강도
+          slideShadows: true, // 슬라이드 그림자 효과
+        },
+        pagination: {
+          el: ".swiper-pagination", // 페이지네이션 위치 설정
+          clickable: true, // 클릭 가능하도록 설정
+        },
+      });
+
     });
 
     // 이메일을 클립보드에 복사하는 함수
@@ -199,6 +232,25 @@
         alert('Failed to copy email to clipboard.');
       });
     }
+
+    let isMoved = false; // 화면 이동 여부 체크
+
+    // 화면을 왼쪽으로 이동하는 함수
+    function moveToNextScreen() {
+      if (!isMoved) {
+        document.querySelector("body").style.transform = "translateX(-100vw)"; // 화면을 왼쪽으로 이동
+        document.querySelector(".backButton").style.display = "block"; // 돌아가기 버튼 보이게 하기
+        isMoved = true; // 이동 상태 설정
+      }
+    }
+
+    // 돌아가기 버튼 클릭 시 화면을 원래대로 돌리는 함수
+    function moveBack() {
+      document.querySelector("body").style.transform = "translateX(0)"; // 화면을 원래 위치로 돌리기
+      document.querySelector(".backButton").style.display = "none"; // 돌아가기 버튼 숨기기
+      isMoved = false; // 이동 상태 초기화
+    }
+
   </script>
 </body>
 
