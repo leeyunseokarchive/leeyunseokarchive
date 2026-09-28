@@ -27,7 +27,3 @@ I like turning ideas into working products quickly, and enjoy building across th
 ![Raspberry Pi](https://img.shields.io/badge/Raspberry_Pi-A22846?style=flat&logo=raspberrypi&logoColor=white)
 
 Interests: RAG / information retrieval, LLM-based agents, hardware-integrated AI products, full-stack web development.
-
----
-
-Pinned projects below highlight recent work. See the [Repositories tab](https://github.com/leeyunseokarchive?tab=repositories) for the full list.
