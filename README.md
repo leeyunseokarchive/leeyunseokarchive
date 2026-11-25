@@ -30,6 +30,4 @@ Interests: RAG / information retrieval, LLM-based agents, hardware-integrated AI
 
 ---
 
-## Contributions
-
 ![Contribution to Grass](https://raw.githubusercontent.com/leeyunseokarchive/leeyunseokarchive/refs/heads/output/output.png)
